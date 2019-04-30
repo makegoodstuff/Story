@@ -1,0 +1,15 @@
+*.iml
+.gradle/
+build/
+.idea/
+.DS_STORE
+local.properties
+*.dSYM
+*.pbxuser
+!default.pbxuser
+xcuserdata/
+*.xcuserstate
+ios/Carthage
+ios/Carthage/Build
+ios/Cartfile.resolved
+ios/Pods
