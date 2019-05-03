@@ -103,14 +103,12 @@
 		D0D7C9732277F27400032EBF /* StoryShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = StoryShared.framework; sourceTree = "<group>"; };
 		D0D7C9742277F27400032EBF /* StoryShared.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = StoryShared.framework.dSYM; sourceTree = "<group>"; };
 		D0D7C9752277F27400032EBF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0D7C9792277F27400032EBF /* CalculatorTestJavaHelper.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CalculatorTestJavaHelper.kt; sourceTree = "<group>"; };
 		D0D7C97C2277F27400032EBF /* ios.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ios.kt; sourceTree = "<group>"; };
 		D0D7C97F2277F27400032EBF /* Calculator.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Calculator.kt; sourceTree = "<group>"; };
 		D0D7C9802277F27400032EBF /* common.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = common.kt; sourceTree = "<group>"; };
 		D0D7C9812277F27400032EBF /* Factory.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Factory.kt; sourceTree = "<group>"; };
 		D0D7C9842277F27400032EBF /* CalculatorTest.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CalculatorTest.kt; sourceTree = "<group>"; };
 		D0D7C9862277F27400032EBF /* AndroidManifest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
-		D0D7C9892277F27400032EBF /* android.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = android.kt; sourceTree = "<group>"; };
 		D0D7C9982277FA7A00032EBF /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
 		D0D7C9992277FA7A00032EBF /* RIBs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RIBs.framework; path = Carthage/Build/iOS/RIBs.framework; sourceTree = SOURCE_ROOT; };
 		D0D7C99A2277FA7A00032EBF /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
@@ -236,30 +234,12 @@
 		D0D7C9762277F27400032EBF /* src */ = {
 			isa = PBXGroup;
 			children = (
-				D0D7C9772277F27400032EBF /* androidLibTest */,
 				D0D7C97A2277F27400032EBF /* iosMain */,
 				D0D7C97D2277F27400032EBF /* commonMain */,
 				D0D7C9822277F27400032EBF /* commonTest */,
 				D0D7C9852277F27400032EBF /* main */,
-				D0D7C9872277F27400032EBF /* androidLibMain */,
 			);
 			path = src;
-			sourceTree = "<group>";
-		};
-		D0D7C9772277F27400032EBF /* androidLibTest */ = {
-			isa = PBXGroup;
-			children = (
-				D0D7C9782277F27400032EBF /* kotlin */,
-			);
-			path = androidLibTest;
-			sourceTree = "<group>";
-		};
-		D0D7C9782277F27400032EBF /* kotlin */ = {
-			isa = PBXGroup;
-			children = (
-				D0D7C9792277F27400032EBF /* CalculatorTestJavaHelper.kt */,
-			);
-			path = kotlin;
 			sourceTree = "<group>";
 		};
 		D0D7C97A2277F27400032EBF /* iosMain */ = {
@@ -318,22 +298,6 @@
 				D0D7C9862277F27400032EBF /* AndroidManifest.xml */,
 			);
 			path = main;
-			sourceTree = "<group>";
-		};
-		D0D7C9872277F27400032EBF /* androidLibMain */ = {
-			isa = PBXGroup;
-			children = (
-				D0D7C9882277F27400032EBF /* kotlin */,
-			);
-			path = androidLibMain;
-			sourceTree = "<group>";
-		};
-		D0D7C9882277F27400032EBF /* kotlin */ = {
-			isa = PBXGroup;
-			children = (
-				D0D7C9892277F27400032EBF /* android.kt */,
-			);
-			path = kotlin;
 			sourceTree = "<group>";
 		};
 		D0D7C9972277FA5500032EBF /* Frameworks */ = {

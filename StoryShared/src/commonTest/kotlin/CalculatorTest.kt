@@ -16,4 +16,3 @@ open class CalculatorTest {
         assertEquals(product.user, "jetbrains")
     }
 }
-

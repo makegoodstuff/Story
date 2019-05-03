@@ -1,4 +1,4 @@
 github "ReactiveX/RxSwift" == 4.5.0
 github "SnapKit/SnapKit" == 4.2.0
-git "https://github.com/makegoodstuff/RIBs.git" "tmp-multiplatform-structure"
+git "https://github.com/makegoodstuff/RIBs.git" "swift-5"
 github "https://github.com/uber/needle.git" ~> 0.9.1
