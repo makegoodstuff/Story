@@ -99,15 +99,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D0605066227E016800490B08 /* Service.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Service.kt; sourceTree = "<group>"; };
+		D0605068227E136400490B08 /* Builder.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Builder.kt; sourceTree = "<group>"; };
+		D060506A227E143C00490B08 /* Interactor.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Interactor.kt; sourceTree = "<group>"; };
+		D060506C227E149D00490B08 /* Router.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Router.kt; sourceTree = "<group>"; };
+		D060506E227E158400490B08 /* View.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = View.kt; sourceTree = "<group>"; };
 		D0D7C96E2277F27400032EBF /* build.gradle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = build.gradle; sourceTree = "<group>"; };
 		D0D7C9732277F27400032EBF /* StoryShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = StoryShared.framework; sourceTree = "<group>"; };
 		D0D7C9742277F27400032EBF /* StoryShared.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = StoryShared.framework.dSYM; sourceTree = "<group>"; };
 		D0D7C9752277F27400032EBF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0D7C97C2277F27400032EBF /* ios.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ios.kt; sourceTree = "<group>"; };
-		D0D7C97F2277F27400032EBF /* Calculator.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Calculator.kt; sourceTree = "<group>"; };
 		D0D7C9802277F27400032EBF /* common.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = common.kt; sourceTree = "<group>"; };
-		D0D7C9812277F27400032EBF /* Factory.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Factory.kt; sourceTree = "<group>"; };
-		D0D7C9842277F27400032EBF /* CalculatorTest.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CalculatorTest.kt; sourceTree = "<group>"; };
+		D0D7C9842277F27400032EBF /* ServiceTest.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ServiceTest.kt; sourceTree = "<group>"; };
 		D0D7C9862277F27400032EBF /* AndroidManifest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
 		D0D7C9982277FA7A00032EBF /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
 		D0D7C9992277FA7A00032EBF /* RIBs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RIBs.framework; path = Carthage/Build/iOS/RIBs.framework; sourceTree = SOURCE_ROOT; };
@@ -269,9 +272,12 @@
 		D0D7C97E2277F27400032EBF /* kotlin */ = {
 			isa = PBXGroup;
 			children = (
-				D0D7C97F2277F27400032EBF /* Calculator.kt */,
 				D0D7C9802277F27400032EBF /* common.kt */,
-				D0D7C9812277F27400032EBF /* Factory.kt */,
+				D0605066227E016800490B08 /* Service.kt */,
+				D0605068227E136400490B08 /* Builder.kt */,
+				D060506A227E143C00490B08 /* Interactor.kt */,
+				D060506C227E149D00490B08 /* Router.kt */,
+				D060506E227E158400490B08 /* View.kt */,
 			);
 			path = kotlin;
 			sourceTree = "<group>";
@@ -287,7 +293,7 @@
 		D0D7C9832277F27400032EBF /* kotlin */ = {
 			isa = PBXGroup;
 			children = (
-				D0D7C9842277F27400032EBF /* CalculatorTest.kt */,
+				D0D7C9842277F27400032EBF /* ServiceTest.kt */,
 			);
 			path = kotlin;
 			sourceTree = "<group>";
