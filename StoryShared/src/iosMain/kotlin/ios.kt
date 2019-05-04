@@ -4,15 +4,11 @@ import kotlinx.cinterop.alloc
 import kotlinx.cinterop.memScoped
 import kotlinx.cinterop.ptr
 import kotlinx.cinterop.toKString
-import kotlinx.cinterop.ExportObjCClass
-import kotlinx.cinterop.ObjCObjectBase.OverrideInit
-import kotlinx.cinterop.ObjCOutlet
 import kotlinx.cinterop.*
 import platform.posix.uname
 import platform.posix.utsname
 import platform.Foundation.*
 import platform.UIKit.*
-import platform.darwin.*
 
 // MARK: Builder
 
