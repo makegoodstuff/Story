@@ -1,4 +1,4 @@
 package com.makegoodstuff.StoryShared
 
-expect open interface Buildable
-expect open interface Builder: Buildable
+expect interface Buildable
+expect interface Builder: Buildable

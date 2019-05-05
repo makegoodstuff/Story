@@ -4,35 +4,32 @@ import kotlinx.cinterop.alloc
 import kotlinx.cinterop.memScoped
 import kotlinx.cinterop.ptr
 import kotlinx.cinterop.toKString
-import kotlinx.cinterop.*
 import platform.posix.uname
 import platform.posix.utsname
-import platform.Foundation.*
-import platform.UIKit.*
 
 // MARK: Builder
 
-actual open interface Buildable {}
-actual open interface Builder: Buildable {}
+actual interface Buildable {}
+actual interface Builder: Buildable {}
 
 // MARK: Interactor
 
-actual open interface Interactable {
+actual interface Interactable {
     actual fun didBecomeActive()
     actual fun willResignActive()
 }
 
-actual open interface Interactor: Interactable {}
+actual interface Interactor: Interactable {}
 
 // MARK: View
 
-open interface ViewControllable {}
+interface ViewControllable {}
 
 actual open class Presenter: ViewControllable {}
 
 // MARK: Router
 
-actual open interface Routable {
+actual interface Routable {
     val children: MutableList<Routable>
     val presenter: Presenter
     val interactor: Interactable
