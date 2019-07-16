@@ -60,6 +60,7 @@ kotlin {
                 implementation 'org.jetbrains.kotlin:kotlin-stdlib-common'
             }
         }
+
         commonTest {
             dependencies {
                 implementation 'org.jetbrains.kotlin:kotlin-test-common'
