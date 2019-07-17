@@ -25,5 +25,5 @@ pluginManagement {
 
 enableFeaturePreview('GRADLE_METADATA')
 
-include ':StoryShared'
+// include ':StoryShared'
 include ':android'
