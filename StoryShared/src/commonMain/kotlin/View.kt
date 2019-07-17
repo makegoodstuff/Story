@@ -1,5 +1,5 @@
 //
-//  common.kt
+//  View.kt
 //  Story
 //
 //  Created by Justin Kaufman on 4/29/19.
@@ -8,6 +8,4 @@
 
 package com.makegoodstuff.StoryShared
 
-expect class Platform() {
-    val platform: String
-}
+expect open class Presenter

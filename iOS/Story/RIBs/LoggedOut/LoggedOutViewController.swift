@@ -13,6 +13,10 @@ import SnapKit
 import UIKit
 import StoryShared
 
+class StoryService: Service {
+    var name: String = "StoryService"
+}
+
 // MARK: PresentableListener
 
 protocol LoggedOutPresentableListener: class {
@@ -25,6 +29,10 @@ final class LoggedOutViewController: UIViewController, LoggedOutPresentable, Log
     weak var listener: LoggedOutPresentableListener?
     private let disposeBag = DisposeBag()
 
+    private let baseService: Service = BaseService()
+    private let authService: AuthService = AuthService()
+    private let storyService: StoryService = StoryService()
+
     init() {
         super.init(nibName: nil, bundle: nil)
         setupSubviews()
@@ -34,17 +42,19 @@ final class LoggedOutViewController: UIViewController, LoggedOutPresentable, Log
     required init?(coder aDecoder: NSCoder) {
         fatalError("Method is not supported")
     }
+
+    private func serviceName(_ service: Service) -> String {
+        return service.name
+    }
 }
 
 // MARK: Private
 
 private extension LoggedOutViewController {
     func setupSubviews() {
-        let platformString = Factory().create(config: ["user": "MakeGoodStuff"])
-        let fivePlusNine = Calculator.Companion().sum(a: 5, b: 9)
-
-        print("platformString: \(platformString)")
-        print("fivePlusNine: \(fivePlusNine)")
+        print("TEST1 baseService: \(serviceName(baseService))")
+        print("TEST2 authService: \(serviceName(authService))")
+        print("TEST3 storyService: \(serviceName(storyService))")
 
         view.backgroundColor = UIColor.white
         let userField = buildUserField()
