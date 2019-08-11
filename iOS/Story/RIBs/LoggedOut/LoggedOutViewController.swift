@@ -52,9 +52,9 @@ final class LoggedOutViewController: UIViewController, LoggedOutPresentable, Log
 
 private extension LoggedOutViewController {
     func setupSubviews() {
-        print("TEST1 baseService: \(serviceName(baseService))")
-        print("TEST2 authService: \(serviceName(authService))")
-        print("TEST3 storyService: \(serviceName(storyService))")
+        print("TEST1 baseService: \(baseService.name)")
+        print("TEST2 authService: \(authService.name)")
+        print("TEST3 storyService: \(storyService.name)")
 
         view.backgroundColor = UIColor.white
         let userField = buildUserField()

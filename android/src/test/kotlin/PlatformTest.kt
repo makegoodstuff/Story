@@ -1,17 +1,16 @@
 package org.konan.multiplatform
 
-import com.makegoodstuff.StoryShared.Greeting
+import com.makegoodstuff.StoryShared.Platform
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.JUnit4
 
 @RunWith(JUnit4::class)
-class GreetingTest {
-
+class PlatformTest {
     @Test
-    fun `should print hello android from android mpp`() {
-        assertEquals(Greeting().StoryShared(), "Hello, Android")
+    fun `should print Android`() {
+        assertEquals(Platform().platform, "Android")
     }
 }
 

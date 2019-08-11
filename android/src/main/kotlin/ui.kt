@@ -16,7 +16,6 @@ class MyApplication : Application() {
 }
 
 class MainActivity : AppCompatActivity() {
-
     private var rootLayout: LinearLayout by Delegates.notNull()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         rootLayout = findViewById(R.id.main_view) as LinearLayout
         rootLayout.removeAllViews()
 
-        val product = Factory.create(mapOf("user" to "JetBrains"))
+        val product = Factory.create(mapOf("user" to "Justin"))
         val tv = TextView(this)
         tv.text = product.toString()
         rootLayout.addView(tv)
